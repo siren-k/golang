@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	signals2 "golang/signals"
+	signals2 "golang/chap2/signals"
 	"os"
 	"os/signal"
 	"syscall"

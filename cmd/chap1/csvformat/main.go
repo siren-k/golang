@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang/csvformat"
+	csvformat2 "golang/chap1/csvformat"
 )
 
 // csv 패키지는 Go의 데이터 흐름(data flow)을 공용 인터페이스로 구현하는 것으로 간주하려는
@@ -14,13 +14,13 @@ import (
 // 나중에 데이터 파이프라인과 워커 풀(worker pool)을 살펴볼 때, 이 개념들을 결합하는 방법과
 // 이 스트림들을 병렬로 제어하는 방법을 확인할 수 있다.
 func main() {
-	if err := csvformat.AddMoviesFromText(); err != nil {
+	if err := csvformat2.AddMoviesFromText(); err != nil {
 		panic(err)
 	}
-	if err := csvformat.WriteCSVOutput(); err != nil {
+	if err := csvformat2.WriteCSVOutput(); err != nil {
 		panic(err)
 	}
-	buffer, err := csvformat.WriteCSVBuffer()
+	buffer, err := csvformat2.WriteCSVBuffer()
 	if err != nil {
 		panic(err)
 	}

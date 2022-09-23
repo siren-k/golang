@@ -1,6 +1,8 @@
 package main
 
-import "golang/bytestrings"
+import (
+	bytestrings2 "golang/chap1/bytestrings"
+)
 
 // Go는 기본 유형을 사용할 때 인터페이스 간에 데이터를 변환하는 과정에서 다양한 유연성을 제공한다.
 // 예를 들어, 문자열과 바이트 사이의 변환은 비교적 간단하다. 문자열을 처리하는 경우, strings 패키지는
@@ -15,12 +17,12 @@ func main() {
 	// 조작할 수 있다. 스트리밍 애플리케이션의 경우 버퍼와 스캐너(scanner)를 사용하고 싶을 텐데,
 	// bufio 패키지는 이런 경우에 유용하다. 때로 매우 작은 데이터 세트인 경우나 컴퓨터의 메모리 용량이
 	// 클 때는 배열이나 슬라이스(slice)를 사용하는 것이 더 적합하다.
-	if err := bytestrings.WorkWithBuffer(); err != nil {
+	if err := bytestrings2.WorkWithBuffer(); err != nil {
 		panic(err)
 	}
 
 	// 아래 내용을 모두 표준 출력(Stdout)에 출력한다.
-	bytestrings.SearchString()
-	bytestrings.ModifyString()
-	bytestrings.StringReader()
+	bytestrings2.SearchString()
+	bytestrings2.ModifyString()
+	bytestrings2.StringReader()
 }

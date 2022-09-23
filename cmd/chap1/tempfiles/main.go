@@ -1,6 +1,8 @@
 package main
 
-import "golang/tempfiles"
+import (
+	"golang/chap1/tempfiles"
+)
 
 // ioutil 패키지를 사용해 임시 파일과 디렉터리를 생성할 수 있다. 여전히 파일을 직접
 // 삭제해야 하지만, RemoveAll 한 줄만 추가하면 나머지 작업은 알아서 처리될 것이다.

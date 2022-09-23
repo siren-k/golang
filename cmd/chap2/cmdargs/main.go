@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang/cmdargs"
+	"golang/chap2/cmdargs"
 	"os"
 	"strings"
 )

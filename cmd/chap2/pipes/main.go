@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang/pipes"
+	"golang/chap2/pipes"
 	"os"
 )
 

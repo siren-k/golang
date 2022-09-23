@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"golang/interfaces"
+	interfaces2 "golang/chap1/interfaces"
 )
 
 // Go 인터페이스는 일반적인 작업을 처리하는 데이터를 래핑(wrapping)하는 깔끔한 추상화를 제공한다.
@@ -17,7 +17,7 @@ func main() {
 	in := bytes.NewReader([]byte("example"))
 	out := &bytes.Buffer{}
 	fmt.Print("stdout on Copy = ")
-	if err := interfaces.Copy(in, out); err != nil {
+	if err := interfaces2.Copy(in, out); err != nil {
 		panic(err)
 	}
 
@@ -26,7 +26,7 @@ func main() {
 	// 다른 소스로 쓰면서 동시에 스트림으로부터 읽는 것이다. 본직적으로 두 스트림을 파이프로 결합시킨다.
 	fmt.Println("out bytes buffer =", out.String())
 	fmt.Print("stdout on  PipeExample = ")
-	if err := interfaces.PipeExample(); err != nil {
+	if err := interfaces2.PipeExample(); err != nil {
 		panic(err)
 	}
 }

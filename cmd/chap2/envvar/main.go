@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"golang/envvar"
+	"golang/chap2/envvar"
 	"io/ioutil"
 	"os"
 )
