@@ -20,7 +20,7 @@ func MarshalAll() error {
 		Age:  40,
 	}
 
-	tomlRes, err := t.toTOML()
+	tomlRes, err := t.ToTOML()
 	if err != nil {
 		return err
 	}

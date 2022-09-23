@@ -12,7 +12,7 @@ type TOMLData struct {
 }
 
 // ToTOML 함수는 TOMLData 구조체를 TOML 포멧의 bytes.Buffer로 덤프(반환)한다.
-func (t *TOMLData) toTOML() (*bytes.Buffer, error) {
+func (t *TOMLData) ToTOML() (*bytes.Buffer, error) {
 	b := &bytes.Buffer{}
 	encoder := toml.NewEncoder(b)
 	if err := encoder.Encode(t); err != nil {
