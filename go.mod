@@ -14,13 +14,12 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.0
 	golang.org/x/text v0.3.7
+	gopkg.in/redis.v6 v6.15.9
 )
 
 require (
-	golang.org/x/mod v0.4.2 // indirect
+	github.com/go-redis/redis v6.15.9+incompatible // indirect
 	golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
-	golang.org/x/tools v0.1.1 // indirect
-	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )

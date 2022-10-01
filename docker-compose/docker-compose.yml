@@ -1,4 +1,6 @@
-version: '3.8'
+# https://www.woolog.dev/backend/docker/database-with-docker/
+
+version: '3'
 
 services:
   chapter6-mysql:
@@ -19,3 +21,16 @@ services:
       - --lower_case_table_names=1
     volumes:
       - ./mysql:/var/lib/mysql
+
+  chapter6-redis:
+    container_name: chapter6-redis
+    image: redis
+    command: redis-server --port 6379
+    restart: always
+    labels:
+      - name=redis
+      - mode=standalone
+    ports:
+      - '6379:6379'
+    volumes:
+      - ./redis:/data
