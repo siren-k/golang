@@ -1,0 +1,25 @@
+////////////////////////////////////////////////////////////////////////////////
+// in grpc directory
+// protoc greeter/*.proto \
+//     --go_out=. --go_opt=paths=source_relative \
+//     --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+//     --proto_path=.
+////////////////////////////////////////////////////////////////////////////////
+syntax = "proto3";
+
+option go_package = "./greeter";
+
+package greeteer;
+
+service GreeterService {
+  rpc Greet(GreetRequest) returns (GreetResponse) {}
+}
+
+message GreetRequest {
+  string greeting = 1;
+  string name = 2;
+}
+
+message GreetResponse {
+  string response = 1;
+}
