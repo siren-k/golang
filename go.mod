@@ -15,6 +15,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.0
 	github.com/twitchtv/twirp v8.1.2+incompatible
+	github.com/unrolled/render v1.5.0
 	go.mongodb.org/mongo-driver v1.10.2
 	golang.org/x/oauth2 v0.0.0-20220909003341-f21342109be1
 	golang.org/x/text v0.3.7
@@ -23,6 +24,7 @@ require (
 )
 
 require (
+	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
