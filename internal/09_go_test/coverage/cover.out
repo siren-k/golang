@@ -1,0 +1,4 @@
+mode: set
+golang/internal/09_go_test/coverage/coverage.go:6.37,7.15 1 1
+golang/internal/09_go_test/coverage/coverage.go:10.2,10.12 1 1
+golang/internal/09_go_test/coverage/coverage.go:7.15,9.3 1 1
