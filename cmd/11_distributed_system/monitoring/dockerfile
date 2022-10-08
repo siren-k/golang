@@ -1,0 +1,8 @@
+FROM golang:1.18.7-alpine
+
+ENV GOPATH /code/
+ADD . /code/monitoring
+WORKDIR /code/monitoring
+RUN GO111MODULE=on GOPROXY=off go build -mod=vendor
+
+ENTRYPOINT /code/monitoring
