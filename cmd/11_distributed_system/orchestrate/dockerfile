@@ -1,0 +1,8 @@
+FROM golang:1.12.4-alpine3.9
+
+ENV GOPATH /code/
+ADD . /code/src/golang/cmd/11_distributed_system/docker
+WORKDIR /code/src/golang/cmd/11_distributed_system/docker/example
+RUN GO11MODULE=on GOPROXY=off go build -mod=vendor
+
+ENTRYPOINT /code/src/golang/cmd/11_distributed_system/docker/example/example
