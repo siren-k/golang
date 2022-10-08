@@ -24,7 +24,7 @@ import (
 // 생성하는데 유용하다. 또한 사전에 한 번 모든 정보를 등록할 수도 있다.
 func main() {
 	// 정보 생성을 위한 핸들러
-	http.HandleFunc("/counter", metrics.CounterHanlder)
+	http.HandleFunc("/counter", metrics.CounterHandler)
 	http.HandleFunc("/timer", metrics.TimerHandler)
 	http.HandleFunc("/report", metrics.ReportHandler)
 

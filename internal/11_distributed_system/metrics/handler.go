@@ -7,7 +7,7 @@ import (
 )
 
 // CounterHandler 함수는 호출될 때마다 카운터(counter)를 갱신한다.
-func CounterHanlder(w http.ResponseWriter, r *http.Request) {
+func CounterHandler(w http.ResponseWriter, r *http.Request) {
 	c := metrics.GetOrRegisterCounter("counterhandler.counter", nil)
 	c.Inc(1)
 	w.WriteHeader(http.StatusOK)
